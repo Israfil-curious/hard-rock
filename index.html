@@ -46,25 +46,25 @@
             <div class="search-bar col-md-6 mx-auto">
                 <h1 class="text-center">Lyrics Search</h1>
                 <div class="search-box my-5">
-                    <input type="text" class="form-control" placeholder="Enter your artist song name">
-                    <button class="btn btn-success search-btn">Search</button>
+                    <input id="searchSong" type="text" class="form-control" placeholder="Enter your artist song name">
+                    <button id="searchButton" class="btn btn-success search-btn">Search</button>
                 </div>
             </div>
             <!-- === Simple results === -->
             <div class="d-flex justify-content-center">
-                <div class="">
-                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
+                <div class="" id="songListArea">
+                    <p id="songSimple1" class="author lead"><strong id="songName1">Purple Noon</strong> Album by <span id="artistName1">Washed Out</span> <button id="lyricSearch1" class="btn btn-success">Get Lyrics</button></p>
+                    <p id="songSimple2" class="author lead"><strong id="songName2">Purple Noon</strong> Album by <span id="artistName2">Washed Out</span> <button id="lyricSearch2" class="btn btn-success">Get Lyrics</button></p>
+                    <p id="songSimple3" class="author lead"><strong id="songName3">Purple Noon</strong> Album by <span id="artistName3">Washed Out</span> <button id="lyricSearch3" class="btn btn-success">Get Lyrics</button></p>
+                    <p id="songSimple4" class="author lead"><strong id="songName4">Purple Noon</strong> Album by <span id="artistName4">Washed Out</span> <button id="lyricSearch4" class="btn btn-success">Get Lyrics</button></p>
+                    <p id="songSimple5" class="author lead"><strong id="songName5">Purple Noon</strong> Album by <span id="artistName5">Washed Out</span> <button id="lyricSearch5" class="btn btn-success">Get Lyrics</button></p>
                 </div>
             </div>
             <!-- Single Lyrics -->
             <div class="single-lyrics text-center">
-                <button class="btn go-back">&lsaquo;</button>
-                <h2 class="text-success mb-4">Pentatonix - Na Na Na</h2>
-                <pre class="lyric text-white">
+                <button class="btn go-back">&lsaquo; <h1></h1> </button>
+                <h2 id="songTitle" class="text-success mb-4">Pentatonix - Na Na Na</h2>
+                <pre id="lyricId" class="lyric text-white">
     Wont go whistling like the wind blows,
     Looking out my window,
     Just to see the shine
@@ -161,12 +161,12 @@
                 </pre>
             </div>
             <!-- === Fancy results === -->
-            <div class="search-result col-md-8 mx-auto py-4">
+            <div id="songStyle" class="search-result col-md-8 mx-auto py-4">
                 <!-- single result -->
-                <div class="single-result row align-items-center my-3 p-3">
+                <div id="songStyle1" class="single-result row align-items-center my-3 p-3">
                     <div class="col-md-9">
-                        <h3 class="lyrics-name">Purple Noon</h3>
-                        <p class="author lead">Album by <span>Washed Out</span></p>
+                        <h3 id="lyricVip1" class="lyrics-name">Purple Noon</h3>
+                        <p id="songVip1" class="author lead">Album by <span>Washed Out</span></p>
                     </div>
                     <div class="col-md-3 text-md-right text-center">
                         <button class="btn btn-success">Get Lyrics</button>
@@ -175,10 +175,10 @@
                 <!-- ./ single result -->
 
                 <!-- single result -->
-                <div class="single-result row align-items-center my-3 p-3">
+                <div id="songStyle2" class="single-result row align-items-center my-3 p-3">
                     <div class="col-md-9">
-                        <h3 class="lyrics-name">Purple Noon</h3>
-                        <p class="author lead">Album by <span>Washed Out</span></p>
+                        <h3 id="lyricVip2" class="lyrics-name">Purple Noon</h3>
+                        <p id="songVip2" class="author lead">Album by <span>Washed Out</span></p>
                     </div>
                     <div class="col-md-3 text-md-right text-center">
                         <button class="btn btn-success">Get Lyrics</button>
@@ -186,10 +186,10 @@
                 </div>
                 <!-- ./ single result -->
                 <!-- single result -->
-                <div class="single-result row align-items-center my-3 p-3">
+                <div id="songStyle3" class="single-result row align-items-center my-3 p-3">
                     <div class="col-md-9">
-                        <h3 class="lyrics-name">Purple Noon</h3>
-                        <p class="author lead">Album by <span>Washed Out</span></p>
+                        <h3 id="lyricVip3" class="lyrics-name">Purple Noon</h3>
+                        <p id="songVip3" class="author lead">Album by <span>Washed Out</span></p>
                     </div>
                     <div class="col-md-3 text-md-right text-center">
                         <button class="btn btn-success">Get Lyrics</button>
@@ -197,10 +197,10 @@
                 </div>
                 <!-- ./ single result -->
                 <!-- single result -->
-                <div class="single-result row align-items-center my-3 p-3">
+                <div id="songStyle3" class="single-result row align-items-center my-3 p-3">
                     <div class="col-md-9">
-                        <h3 class="lyrics-name">Purple Noon</h3>
-                        <p class="author lead">Album by <span>Washed Out</span></p>
+                        <h3 id="lyricVip4" class="lyrics-name">Purple Noon</h3>
+                        <p id="songVip4" class="author lead">Album by <span>Washed Out</span></p>
                     </div>
                     <div class="col-md-3 text-md-right text-center">
                         <button class="btn btn-success">Get Lyrics</button>
@@ -220,6 +220,115 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Custom Script Here -->
+    <script>
+        const searchButton = document.getElementById("searchButton");
+        searchButton.addEventListener("click", function() {
+            let song = document.getElementById("searchSong").value;
+            if (song != "") {
+                callSongs(song)
+
+            } else {
+                alert("Please enter your song name for lyrics")
+            }
+
+        })
+
+        const lyricSearchButton1 = document.getElementById("lyricSearch1");
+        lyricSearchButton1.addEventListener("click", function() {
+            callLyrics("songName1", "artistName1");
+            styleSongArea("lyricVip1", "lyricVip2", "lyricVip3", "lyricVip4", "songName2", "songName3", "songName4", "songName5", "songSimple2", "songSimple3", "songSimple4", "songSimple5");
+
+
+        })
+
+        const lyricSearchButton2 = document.getElementById("lyricSearch2");
+        lyricSearchButton2.addEventListener("click", function() {
+            callLyrics("songName2", "artistName2");
+            styleSongArea("lyricVip1", "lyricVip")
+        })
+
+        const lyricSearchButton3 = document.getElementById("lyricSearch3");
+        lyricSearchButton3.addEventListener("click", function() {
+            callLyrics("songName3", "artistName3");
+        })
+
+        const lyricSearchButton4 = document.getElementById("lyricSearch4");
+        lyricSearchButton4.addEventListener("click", function() {
+            callLyrics("sonName4", "artistName4");
+        })
+
+        const lyricSearchButton5 = document.getElementById("lyricSearch5");
+        lyricSearchButton5.addEventListener("click", function() {
+            callLyrics("songName5", "artistName5");
+        })
+
+        // const songTitle = document.getElementById("songName1").innerText;
+        //             const artistName = document.getElementById("artistName1").innerText;
+
+        //             fetch(`https://api.lyrics.ovh/v1/${artistName}/${songTitle}`)
+        //                 .then(res => res.json())
+        //                 .then(data => {
+        //                     console.log(data);
+        //                 })
+
+        function callSongs(song) {
+            fetch(`https://api.lyrics.ovh/suggest/${song}`)
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data)
+                    console.log(data.data[0].artist.name);
+                    document.getElementById("artistName1").innerText = data.data[0].artist.name;
+                    document.getElementById("artistName2").innerText = data.data[1].artist.name;
+                    document.getElementById("artistName3").innerText = data.data[2].artist.name;
+                    document.getElementById("artistName4").innerText = data.data[3].artist.name;
+                    document.getElementById("artistName5").innerText = data.data[4].artist.name;
+
+                    document.getElementById("songName1").innerText = data.data[0].album.title;
+                    document.getElementById("songName2").innerText = data.data[1].album.title;
+                    document.getElementById("songName3").innerText = data.data[2].album.title;
+                    document.getElementById("songName4").innerText = data.data[3].album.title;
+                    document.getElementById("songName5").innerText = data.data[4].album.title;
+
+                    document.getElementById("songListArea").style.display = "block";
+                    document.getElementById("songSimple1").style.display = "block";
+                    document.getElementById("songSimple2").style.display = "block";
+                    document.getElementById("songSimple3").style.display = "block";
+                    document.getElementById("songSimple4").style.display = "block";
+                    document.getElementById("songSimple5").style.display = "block";
+                })
+        }
+
+        function callLyrics(songTitleId, artistNameId) {
+            const songTitle = document.getElementById(songTitleId).innerText;
+            const artistName = document.getElementById(artistNameId).innerText;
+
+            fetch(`https://api.lyrics.ovh/v1/${artistName}/${songTitle}`)
+                .then(res => res.json())
+                .then(data => {
+                    if (data.lyrics == undefined) {
+                        document.getElementById("lyricId").innerText = "Sorry, contain is not able";
+                        document.getElementById("songTitle").style.display = "none";
+                    } else {
+                        document.getElementById("lyricId").innerText = data.lyrics;
+                        document.getElementById("songTitle").innerText = songTitle;
+                        document.getElementById("songTitle").style.display = "block";
+                    }
+                    document.getElementById("lyricId").style.display = "block";
+                })
+        }
+
+        function styleSongArea(lyricVip1, lyricVip2, lyricVip3, lyricVip4, songName1, songName2, songName3, songName4, songSimple1, songSimple2, songSimple3, songSimple4) {
+            document.getElementById(lyricVip1).innerText = document.getElementById(songName1).innerText;
+            document.getElementById(lyricVip2).innerText = document.getElementById(songName2).innerText;
+            document.getElementById(lyricVip3).innerText = document.getElementById(songName3).innerText;
+            document.getElementById(lyricVip4).innerText = document.getElementById(songName4).innerText;
+
+            document.getElementById(songSimple1).style.display = "none";
+            document.getElementById(songSimple2).style.display = "none";
+            document.getElementById(songSimple3).style.display = "none";
+            document.getElementById(songSimple4).style.display = "none";
+        }
+    </script>
 
 </body>
 
